@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Fuzzy-Fusion-SOD" />
     <meta name="twitter:description"
-        content="Generative Augmentation Driven Prediction of Diverse Visual Scanpaths in Images." />
+        content="RGB-D Fusion through Zero-shot Fuzzy Membership Learning for Salient Object Detection." />
     <meta name="twitter:url" content="https://sudiptabhuyan1.github.io/Fuzzy-Fusion-SOD" />
     <meta name="twitter:image" content="https://sudiptabhuyan1.github.io/assets/images/lfsafa_thumb.jpg" />
 
@@ -121,28 +121,32 @@
         <div class="row">
             <div class="col-sm">
                 <p style="text-align: justify">
-                    Visual scanpaths of multiple humans on an image represent the process
-                    by which they capture the information in it. State-of-the-art models 
-                    to predict visual scanpaths on images learn directly from recorded 
-                    human visual scanpaths. However, the generation of multiple visual
-                    scanpaths on an image having diversity like human visual scanpaths
-                    has not been explicitly considered. In this paper, we propose a deep
-                    network for predicting multiple diverse visual scanpaths on an image.
-                    Image-specific hidden Markov model based generative data augmentation
-                    is performed in the beginning to increase the number of image-visual
-                    scanpath training pairs. Considering a similarity between our generative
-                    data augmentation process and the use of long short-term memory (LSTM)
-                    for prediction, we propose an LSTM based visual scanpath predictor.
-                    A network to predict a single visual scanpath on an image is designed first.
-                    The network is then modified to predict multiple diverse visual scanpaths
-                    representing different viewer varieties by using a parameter indicating the
-                    uniqueness of a viewer. A random vector is also employed for subtle variations
-                    within scanpaths of the same viewer variety. Our models are evaluated on three
-                    standard datasets using multiple performance measures, which demonstrate the
-                    superiority of the proposed approach over the state-of-the-art. Empirical
-                    studies are also given indicating the significance of our generative data
-                    augmentation method and our multiple scanpath prediction strategy producing
-                    diverse visual scanpaths.
+                    Significant improvement has been achieved lately
+                    in color and depth data based salient object detection on images
+                    from varied datasets, which is mainly due to RGB-D fusion using
+                    modern machine learning techniques. However, little emphasis
+                    has been given recently on performing RGB-D fusion for salient
+                    object detection in the absence of ground truth data for training.
+                    This paper proposes a zero-shot deep RGB-D fusion approach
+                    based on the novel concept of fuzzy membership learning, which
+                    does not require any paired or unpaired data for training.
+                    The constituent salient object maps to be fused are represented
+                    using parametric fuzzy membership functions and the optimal
+                    parameter values are estimated through our zero-shot fuzzy
+                    membership learning (Z-FML) network. The optimal parameter
+                    values are used in a fuzzy inference system along with the
+                    constituent salient object maps to perform the fusion. A measure
+                    called the membership similarity measure (MSM) is proposed,
+                    and the Z-FML network is trained using it to devise a loss
+                    function that maximizes the similarity between the constituent
+                    salient object maps and the fused salient object map. The
+                    deduction of MSM and its properties are shown theoretically, and
+                    the gradients involved in the training of the Z-FML network are
+                    derived. Qualitative and quantitative evaluations using several
+                    datasets signify the effectiveness of our RGB-D fusion and our
+                    fusion based RGB-D salient object detection in comparison to the
+                    state-of-the-art. We also empirically demonstrate the advantage
+                    of employing the novel MSM for training our Z-FML network.
                 </p>
             </div>
         </div>
